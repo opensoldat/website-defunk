@@ -59,7 +59,7 @@ const Footer = () => (
                         </ul>
                     </nav>
 
-                    <p className="c-footer__text">Copyright &copy; {new Date().getFullYear()} Transhuman Design. All
+                    <p className="c-footer__text">Copyright &copy; {new Date().getFullYear()} Soldat Team. All
                         rights
                         reserved.</p>
                 </div>
