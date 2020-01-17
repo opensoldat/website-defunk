@@ -1,0 +1,49 @@
+links:
+  - title: About us
+    path: /subpage
+    internal: true
+  - title: Links
+    path: /subpage
+    internal: true
+  - title: Leagues
+    path: /subpage
+    internal: true
+  - title: Downloads
+    path: /subpage
+    internal: true
+  - title: FAQ
+    path: /subpage
+    internal: true
+  - title: Manual
+    path: /subpage
+    internal: true
+  - title: Contact
+    path: /subpage
+    internal: true
+
+links_secondary:
+  - title: Privacy policy
+    path: /privacy-policy
+    internal: true
+  - title: Terms and conditions
+    path: /subpage
+    internal: true
+  - title: Forums
+    path: https://forums.soldat.pl/
+    internal: false
+  - title: Store
+    path: https://shop.spreadshirt.pl/soldat-en/
+    internal: false
+
+social_links:
+  - icon: facebook
+    url: http://
+  - icon: twitter
+    url: http://
+  - icon: youtube
+    url: http://
+  - icon: twitch
+    url: http://
+  - icon: discord
+    url: http://
+

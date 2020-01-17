@@ -1,0 +1,16 @@
+.c-cta {
+
+  padding-top: 5vw;
+  padding-bottom: 20rem;
+  text-align: center;
+
+  @include bp(small down) {
+    padding: 4rem 0 8rem;
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
+
+.c-cta__heading {
+
+  margin-bottom: 3rem;
+}

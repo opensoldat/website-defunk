@@ -1,0 +1,15 @@
+heading: Discover Game Features
+items:
+  - title: There are so many game types
+    image: "../src/assets/images/features/gametypes.png"
+    description:
+        "Soldat has seven main game modes: Deathmatch, Pointmatch, Teammatch, Rambomatch, Capture the Flag, Infiltration, Hold the Flag. It also has three additional sub-game modes: Realistic, Survival , Advance.
+        New sub game modes showed up within the years, thanks to Soldat's community. Some managed to overcome default modes within time thanks to their refreshing ideas and good modding community behind them. Even today some of those still have a strong positions in Soldat."
+  - title: 2 Milion Maps Created
+    image: "../src/assets/images/features/maps.png"
+    description: "Soldat has seven main game modes: Deathmatch, Pointmatch, Teammatch, Rambomatch, Capture the Flag, Infiltration, Hold the Flag. It also has three additional sub-game modes: Realistic, Survival , Advance.
+
+                       New sub game modes showed up within the years, thanks to Soldat's community. Some managed to overcome default modes within time thanks to their refreshing ideas and good modding community behind them. Even today some of those still have a strong positions in Soldat."
+  - title: Modding, Community, Leagues etc
+    image: "../src/assets/images/features/placeholder.png"
+    description: "Soldat has seven main game modes: Deathmatch, Pointmatch, Teammatch, Rambomatch, Capture the Flag, Infiltration, Hold the Flag. It also has three additional sub-game modes: Realistic, Survival , Advance."

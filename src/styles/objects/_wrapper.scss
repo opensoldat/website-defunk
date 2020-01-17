@@ -1,0 +1,29 @@
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+
+/**
+ * Page-level constraining and wrapping elements.
+ */
+
+.o-wrapper {
+  @include clearfix();
+
+  margin: 0;
+
+  @include bp(small) {
+    margin: 0 4%;
+  }
+
+  @include bp(medium) {
+    margin: 0 10%;
+  }
+
+  @include bp(large) {
+    margin: 0 15%;
+  }
+
+  @include bp(xlarge) {
+    margin: 0 20%;
+  }
+}

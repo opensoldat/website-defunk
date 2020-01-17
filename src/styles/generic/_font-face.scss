@@ -1,0 +1,44 @@
+/* ==========================================================================
+   #FONT-FACE
+   ========================================================================== */
+
+/**
+ * Add font-display: swap to font-face blocks here
+ * https://www.zachleat.com/web/comprehensive-webfonts/#font-display
+ */
+
+@font-face {
+  font-family: Trueno;
+  src: url('../assets/fonts/Trueno/TruenoSemiBold.woff2') format('woff2'),
+    url('../assets/fonts/Trueno/TruenoSemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Trueno;
+  src: url('../assets/fonts/Trueno/TruenoExtraBold.woff2') format('woff2'),
+    url('../assets/fonts/Trueno/TruenoExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../assets/fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Roboto/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../assets/fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Roboto/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

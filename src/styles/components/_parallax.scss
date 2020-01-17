@@ -1,0 +1,40 @@
+.c-parallax {
+
+  width: 100%;
+  position: relative;
+  min-height: 152vw;
+  padding-bottom: 0;
+}
+
+.c-parallax__layers {
+
+  z-index: -2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #60a3b3 0%, #111c26 53%, $color-dark-violet 100%);
+  overflow: hidden;
+
+  @include bp(small down) {
+    display: none;
+  }
+}
+
+.c-parallax__layer {
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  //height: 100%;
+
+  @include bp(medium down) {
+
+    width: 1024px;
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+
+}

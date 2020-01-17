@@ -1,0 +1,16 @@
+links:
+  - title: About
+    path: /subpage
+    internal: true
+  - title: Blog
+    path: /subpage
+    internal: true
+  - title: Leaderboards
+    path: /subpage
+    internal: true
+  - title: Media
+    path: /subpage
+    internal: true
+  - title: Community
+    path: /subpage
+    internal: true

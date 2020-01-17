@@ -1,0 +1,19 @@
+heading: "Screenshots"
+images:
+  - thumb: "../src/assets/images/screenshots/ss_1_thumb.jpg"
+    full: "../src/assets/images/screenshots/ss_1.jpg"
+
+  - thumb: "../src/assets/images/screenshots/ss_2_thumb.jpg"
+    full: "../src/assets/images/screenshots/ss_2.jpg"
+
+  - thumb: "../src/assets/images/screenshots/ss_3_thumb.jpg"
+    full: "../src/assets/images/screenshots/ss_3.jpg"
+
+  - thumb: "../src/assets/images/screenshots/ss_4_thumb.jpg"
+    full: "../src/assets/images/screenshots/ss_4.jpg"
+
+  - thumb: "../src/assets/images/screenshots/ss_5_thumb.jpg"
+    full: "../src/assets/images/screenshots/ss_5.jpg"
+
+  - thumb: "../src/assets/images/screenshots/ss_6_thumb.jpg"
+    full: "../src/assets/images/screenshots/ss_6.jpg"

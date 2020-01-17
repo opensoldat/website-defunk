@@ -1,0 +1,13 @@
+@mixin btn-reset {
+  // based on https://gist.github.com/anthonyshort/552543
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  font: inherit;
+  color: inherit;
+  border-radius: 0;
+}

@@ -1,0 +1,159 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+.c-btn {
+
+  margin-bottom: 0.8rem;
+  display: inline-block;
+  padding: 0 5em;
+  height: 3.75em;
+  line-height: 3.75em;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: none;
+  text-align: center;
+  font-family: $font-sans-serif;
+
+  transition: $global-transition;
+  border-radius: $global-radius;
+
+  position: relative;
+}
+
+/* Style variants
+   ========================================================================== */
+
+.c-btn--primary {
+  background: $color-red;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 2rem 0.1rem rgba($color-red, 0.75);
+  }
+}
+
+.c-btn--secondary {
+  background: $color-green;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $color-dark-violet;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 2rem 0.1rem rgba($color-green, 0.75);
+  }
+}
+
+.c-btn--pulse {
+  &:before {
+
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 0.5rem;
+
+    box-shadow: 0 0 0 rgba($color-white, 0.4);
+    animation: c-btn-animation-pulse 2s infinite;
+    transition: $global-transition;
+  }
+}
+
+.c-btn--steam {
+  background: $color-black;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 2rem 0.1rem rgba($color-black, 0.75);
+    color: $color-red;
+  }
+
+  .c-btn__inner {
+
+    position: relative;
+    padding-left: 3.5rem;
+  }
+
+  .c-btn__text {
+
+    transition: $global-transition;
+    margin-top: -1rem;
+  }
+
+  .c-btn__image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto 0 auto 0;
+    font-size:7.8rem;
+    //width: 7.8125rem;
+    //height: 2.1875rem;
+    color:#fff;
+  }
+}
+
+/* Size variants
+   ========================================================================== */
+
+.c-btn--xsmall {
+  font-size: 0.5rem;
+}
+
+.c-btn--small {
+  font-size: 0.8rem;
+}
+
+.c-btn--large {
+  font-size: 1.2rem;
+}
+
+
+/* Animations
+   ========================================================================== */
+
+@keyframes c-btn-animation-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba($color-white, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 0.625rem rgba($color-white, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba($color-white, 0);
+  }
+}

@@ -1,0 +1,91 @@
+///* ========================================================================
+//   #BREAKPOINTS
+//   ======================================================================== */
+
+@function bp-val($name) {
+  @if type-of($name) == 'number' {
+    @return $name;
+  }
+
+  $val: map-get($breakpoints, $name);
+
+  @if $val == null {
+    @error 'Breakpoint #{$name} not found';
+  }
+
+  @return $val;
+}
+
+@function bp-val-next($name) {
+  $breakpoint-names: map_keys($breakpoints);
+  $n: index($breakpoint-names, $name);
+
+  @if $n >= length($breakpoint-names) {
+    @error 'Next breakpoint after #{$name} not found';
+  }
+
+  $next-key: nth($breakpoint-names, $n + 1);
+  @return map-get($breakpoints, $next-key);
+}
+
+@function bp($name, $name2: false) {
+
+  $bp: nth($name, 1);
+  $dir: if(length($name) > 1, nth($name, 2), '');
+
+  @if ($name2 != false) {
+
+    @return '(min-width: #{bp-val($bp)}) and (max-width: #{bp-val($name2) - 0.02})';
+  }
+  @else {
+
+    @if ($bp == 'landscape' or $bp == 'portrait') {
+      @return '(orientation: #{$bp})';
+    }
+    @else if $bp == 'retina' {
+      @return '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)';
+    }
+    @else {
+
+      @if ($dir == 'down') {
+
+        @return '(max-width: #{bp-val($bp) - 0.02})';
+      }
+      @else if ($dir == 'only') {
+
+        @return '(min-width: #{bp-val($bp)}) and (max-width: #{bp-val-next($bp) - 0.02})'; }
+      @else {
+
+        @return '(min-width: #{bp-val($bp)})';
+      }
+    }
+  }
+}
+
+@mixin bp($name) {
+
+  @media #{bp($name)} {
+    @content;
+  }
+}
+
+@mixin bp-down($name) {
+
+  @media #{bp($name down)} {
+    @content;
+  }
+}
+
+@mixin bp-only($name) {
+
+  @media #{bp($name only)} {
+    @content;
+  }
+}
+
+@mixin bp-between($name1, $name2) {
+
+  @media #{bp($name1, $name2)} {
+    @content;
+  }
+}
