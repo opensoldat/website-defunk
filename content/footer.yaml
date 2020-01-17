@@ -15,8 +15,8 @@ links:
     path: /subpage
     internal: true
   - title: Manual
-    path: /subpage
-    internal: true
+    path: https://soldat.github.io/manual/manual.html
+    internal: false
   - title: Contact
     path: /subpage
     internal: true
@@ -31,19 +31,16 @@ links_secondary:
   - title: Forums
     path: https://forums.soldat.pl/
     internal: false
-  - title: Store
-    path: https://shop.spreadshirt.pl/soldat-en/
-    internal: false
 
 social_links:
   - icon: facebook
-    url: http://
+    url: https://www.facebook.com/soldat2d/
   - icon: twitter
-    url: http://
+    url: https://twitter.com/soldat2d
   - icon: youtube
-    url: http://
+    url: https://www.youtube.com/channel/UCD4JW2MswRKiDVG-Gl4NM5A
   - icon: twitch
-    url: http://
+    url: https://www.twitch.tv/directory/game/Soldat/
   - icon: discord
-    url: http://
+    url: http://discord.gg/soldat
 
