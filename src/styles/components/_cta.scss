@@ -5,7 +5,7 @@
   text-align: center;
 
   @include bp(small down) {
-    padding: 4rem 0 8rem;
+    padding: 4rem 2rem 3.2rem;
     background: rgba(255, 255, 255, 0.04);
   }
 }
