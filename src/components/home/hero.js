@@ -11,7 +11,7 @@ export default () => (
           query{
       file(relativePath: {eq: "images/home_hero/rambo.png"}) {
        childImageSharp {
-          fluid(maxWidth: 1080, quality:100, sizes: "72vw") {
+          fluid(maxWidth: 1080, quality:70, sizes: "72vw") {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
@@ -34,6 +34,10 @@ export default () => (
                     </a>
                 </div>
             </div>
+            <div className="c-home-hero__bg">
+                <Img fluid={image} alt="" className="c-home-hero__rambo" loading="eager" fadeIn="false"/>
+                <div className="c-home-hero__bg-sec"/>
+            </div>
             <video className="c-home-hero__video js-hero-video" poster={VideoPoster} autoPlay
                    muted loop>
                 <source src={Video} type="video/mp4"/>
@@ -42,12 +46,6 @@ export default () => (
                 <Icon name="arrow-circle-down" inline="true" className="c-home-hero__trailer-link-icon"/>
                 {Data.watch_trailer_text}
             </a>
-            <div className="c-home-hero__bg">
-
-                    <Img fluid={image} alt="" className="c-home-hero__rambo"/>
-
-                <div className="c-home-hero__bg-sec"/>
-            </div>
         </section>
     )}/>
 )

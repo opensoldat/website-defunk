@@ -12,7 +12,7 @@ export default () => (
           query{
       file(relativePath: {eq: "images/about_bg.png"}) {
        childImageSharp {
-          fluid(srcSetBreakpoints: [384, 513], maxWidth: 861, quality:100, sizes: "43vw") {
+          fluid(srcSetBreakpoints: [384, 513], maxWidth: 861, sizes: "43vw", quality:50) {
             ...GatsbyImageSharpFluid
           }
         }

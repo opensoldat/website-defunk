@@ -16,7 +16,7 @@ export default () => {
                         title
                         image {
                             childImageSharp {
-                                fluid(maxWidth: 306, sizes:"(min-width: 1336px) 23vw, 306px") {
+                                fluid(maxWidth: 306, sizes:"(min-width: 1336px) 23vw, 306px", quality:75) {
                                     ...GatsbyImageSharpFluid
                                     originalName
                                 }

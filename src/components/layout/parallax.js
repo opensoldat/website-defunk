@@ -12,7 +12,7 @@ const Parallax = ({children}) => {
                     node {
                         base
                         childImageSharp {
-                            fluid(srcSetBreakpoints: [1024, 1366, 1680, 1920, 2560], maxWidth: 3840, sizes: "(max-width: 1024px) 1024px, 100vw") {
+                            fluid(srcSetBreakpoints: [1024, 1366, 1680, 1920, 2560], maxWidth: 3840, sizes: "(max-width: 1024px) 1024px, 100vw", quality:40) {
                                 ...GatsbyImageSharpFluid_noBase64
                             }
                         }

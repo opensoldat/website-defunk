@@ -14,7 +14,7 @@ const Screenshots = () => {
                         thumb {
                             base
                             childImageSharp {
-                                fluid(sizes: "(min-width: 48em) 9.6vw, (min-width: 64em) 11.5vw, (min-width: 85.375em) 10.4vw, (min-width: 120em) 8.8vw, 29.3vw", maxWidth: 167, quality: 100) {
+                                fluid(sizes: "(min-width: 48em) 9.6vw, (min-width: 64em) 11.5vw, (min-width: 85.375em) 10.4vw, (min-width: 120em) 8.8vw, 29.3vw", maxWidth: 167, quality: 75) {
                                     ...GatsbyImageSharpFluid
                                 }
                             }
