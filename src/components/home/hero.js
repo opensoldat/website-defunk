@@ -1,5 +1,6 @@
 import React from "react"
-import Video from '../../assets/video/Soldat.mp4'
+import VideoWebM from '../../assets/video/Soldat.webm'
+import VideoMP4 from '../../assets/video/Soldat.mp4'
 import VideoPoster from '../../assets/images/home_hero/video_poster.jpg'
 import Img from "gatsby-image"
 import {StaticQuery, graphql} from "gatsby"
@@ -40,7 +41,8 @@ export default () => (
             </div>
             <video className="c-home-hero__video js-hero-video" poster={VideoPoster} autoPlay
                    muted loop>
-                <source src={Video} type="video/mp4"/>
+                <source src={VideoWebM} type="video/webm"/>
+                <source src={VideoMP4} type="video/mp4"/>
             </video>
             <a href="/" className="c-home-hero__trailer-link">
                 <Icon name="arrow-circle-down" inline="true" className="c-home-hero__trailer-link-icon"/>
