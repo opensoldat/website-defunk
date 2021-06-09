@@ -21,7 +21,7 @@ npm run build
 
 ## PSD files
 
-[Link](https://cp.sync.com/dl/04c186d70#w7bscz2t-ud8uqkne-pfuxfk5u-8qgf4wnv)
+[Link](https://app.koofr.net/links/2b714361-fcb9-4d29-86c2-f891e12a3d49)
 
 ## Authors & contributors
 
