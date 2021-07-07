@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .c-btn {
-
   margin-bottom: 0.8rem;
   display: inline-block;
   padding: 0 5em;
@@ -61,7 +60,6 @@
 
 .c-btn--pulse {
   &:before {
-
     content: '';
     display: block;
     position: absolute;
@@ -101,13 +99,11 @@
   }
 
   .c-btn__inner {
-
     position: relative;
     padding-left: 3.5rem;
   }
 
   .c-btn__text {
-
     transition: $global-transition;
     margin-top: -1rem;
   }
@@ -118,10 +114,10 @@
     bottom: 0;
     top: 0;
     margin: auto 0 auto 0;
-    font-size:7.8rem;
-    //width: 7.8125rem;
-    //height: 2.1875rem;
-    color:#fff;
+    font-size: 2.15rem;
+    svg {
+      fill: #fff;
+    }
   }
 }
 
@@ -139,7 +135,6 @@
 .c-btn--large {
   font-size: 1.2rem;
 }
-
 
 /* Animations
    ========================================================================== */
