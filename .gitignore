@@ -70,3 +70,4 @@ yarn-error.log
 
 #Project
 .idea
+.history/

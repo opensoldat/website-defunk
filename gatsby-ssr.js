@@ -5,7 +5,7 @@
  */
 
 exports.onRenderBody = ({ setBodyAttributes }) => {
-    setBodyAttributes({
-        className: 'no-js'
-    });
-};
+  setBodyAttributes({
+    className: "no-js",
+  })
+}

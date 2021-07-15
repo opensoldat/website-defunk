@@ -25,4 +25,4 @@ npm run build
 
 ## Authors & contributors
 
-* Arkadiusz Lorbiecki ([appnautic](https://github.com/appnautic)) Design & initial code
+- Arkadiusz Lorbiecki ([appnautic](https://github.com/appnautic)) Design & initial code
